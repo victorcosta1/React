@@ -14,7 +14,7 @@ function NavBar(){
            
             <Link to='/'><img src={logo} alt="Costs"></img></Link>
  
-                <ul class={styles.list}>
+                <ul className={styles.list}>
                     <li className={styles.item}><Link to='/'>Home</Link></li>
                     <li className={styles.item}><Link to='/projectes'>projectes</Link></li>
                     <li className={styles.item}><Link to='/contact'>Contato</Link></li>
