@@ -26,7 +26,7 @@ function NewProject(){
             console.log(data)
             //redirect
 
-            history('/projectes', {message: 'Projeto criado com sucesso'})
+            history('/projectes', {state:{message: 'Projeto criado com sucesso'}})
         }))
         .catch(err => console.log(err))
     }
