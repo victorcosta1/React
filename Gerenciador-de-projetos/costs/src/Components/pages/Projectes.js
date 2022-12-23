@@ -45,24 +45,18 @@ function Projectes(){
 
             {message && <Message type="success" msg={message}/>}
 
-
-
-
             <Container customClass="start">
-               
                 {projects.length > 0 &&
                     projects.map((project) => (
-                        <ProjectCard 
-                        id={project.id}
-                        name={project.name}
-                        budget={project.budget}
-                        category={project.category.name}
-                        key={project.id}
-                        />
-                    ))}
-
-
-            </Container>
+                    <ProjectCard
+                      id={project.id}
+                      name={project.name}
+                      budget={project.budget}
+                      category={project.category.name}
+                      key={project.id}
+            />
+          ))}
+      </Container>
         </div>
     )
 }

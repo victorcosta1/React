@@ -8,7 +8,7 @@ import { BsPencil, BsFillTrashFill } from 'react-icons/bs'
 function ProjectCard({id, name, budget, category, handleRemove}) {
     return (
         <div className={styles.project_card}>
-            <h4>Name</h4>
+            <h4>{name}</h4>
             <p>
                 <span>Orçamentos:</span> R${budget}
             </p>
@@ -17,7 +17,7 @@ function ProjectCard({id, name, budget, category, handleRemove}) {
             </p>
 
             <div className={styles.project_card_actions}>
-                <Link to="/">
+                <Link to={'/project/' + id}>
                     <BsPencil/>Editar
                 </Link>
                 <button>
